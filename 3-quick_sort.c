@@ -2,6 +2,7 @@
 #include "sort.h"
 
 /* Function prototypes */
+
 void quick_sort_recursive(int *array, int low, int high, size_t size);
 int partition(int *array, int low, int high, size_t size);
 
@@ -27,6 +28,7 @@ void quick_sort(int *array, size_t size)
  * @high: Ending index of the partition
  * @size: Number of elements in @array
  */
+
 void quick_sort_recursive(int *array, int low, int high, size_t size)
 {
 	if (low < high)
@@ -47,6 +49,7 @@ void quick_sort_recursive(int *array, int low, int high, size_t size)
  *
  * Return: The index of the pivot element after partitioning
  */
+
 int partition(int *array, int low, int high, size_t size)
 {
 	int pivot = array[high];
